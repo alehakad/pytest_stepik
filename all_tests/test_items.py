@@ -6,4 +6,4 @@ def test_submit_button_lang(browser):
     browser.get(link)
     #time.sleep(10)
     submit_button = browser.find_elements(By.CSS_SELECTOR, "#add_to_basket_form > button")
-    assert submit_button is not None, 'submit button not found'
+    assert submit_button, 'submit button not found'
